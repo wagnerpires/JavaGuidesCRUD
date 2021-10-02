@@ -1,10 +1,11 @@
-# Backend do Projeto React Hooks + Spring Boot CRUD Full Stack App (JavaGuides) 
+# Backend do Projeto React Hooks + Spring Boot CRUD (JavaGuides) 
 
-## CRUD REST API's usando Spring boot, Spring Data JPA e H2 database
+# Full Stack App com:
 
-## CRUD React App usando React Hooks
+## CRUD REST API's Spring boot, Spring Data JPA e H2 database
+## CRUD React App utilizando alguns dos pricipais React Hooks
 
-#- useState
-#- useEffect
-#- useParams
-#- useHistory
+#useState
+#useEffect
+#useParams
+#useHistory
