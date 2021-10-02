@@ -1,6 +1,4 @@
-# Projeto React Hooks + Spring Boot CRUD (JavaGuides) 
-
-# Full Stack App:
+# Full Stack App: Projeto React Hooks + Spring Boot CRUD (JavaGuides) 
 
 ## CRUD REST API's Spring boot, Spring Data JPA e H2 database
 
