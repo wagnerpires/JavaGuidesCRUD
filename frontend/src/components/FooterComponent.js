@@ -5,7 +5,7 @@ const FooterComponent = () => {
     return (
         <div>
             <footer className = "footer">
-                <span className = "text-muted" > Todos os direitos reservados 2021 @WagnerPires</span>
+                <span className = "text-muted" > Todos os direitos reservados 2021 WR - Tecnologia em Sistemas</span>
             </footer>
         </div>
     )

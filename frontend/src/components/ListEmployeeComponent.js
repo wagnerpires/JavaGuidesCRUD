@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EmployeeService from "../services/EmployeeService";
+import './ListEmployeeComponent.css';
 
 const ListEmployeeComponent = () => {
 
@@ -16,7 +17,7 @@ const ListEmployeeComponent = () => {
 
     return (
     <div className = "container">
-        <h2 className = "text-center">Listagem geral de Funcionários</h2>
+        <h2 className = "text-center h2-custom">Listagem geral de Funcionários</h2>
             <table className = "table table-bordered table-stripped">
                 <thead>
                      <th>Matrícula</th>
