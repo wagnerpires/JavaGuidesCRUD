@@ -19,13 +19,13 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "first_name")
+   // @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "last_name")
+   // @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "email_id")
-    private Long emailId;
+   // @Column(name = "email_id")
+    private String emailId;
 
 }

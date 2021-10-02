@@ -1,4 +1,4 @@
-# Backend do Projeto React Hooks + Spring Boot CRUD (JavaGuides) 
+# Projeto React Hooks + Spring Boot CRUD (JavaGuides) 
 
 # Full Stack App:
 
