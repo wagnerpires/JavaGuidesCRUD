@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import EmployeeService from "../services/EmployeeService";
 import './ListEmployeeComponent.css';
 
@@ -18,6 +19,7 @@ const ListEmployeeComponent = () => {
     return (
     <div className = "container">
         <h2 className = "text-center h2-custom">Listagem geral de Funcionários</h2>
+        <Link to ="/add-employee" className="btn btn-primary mb-2"> Cadastrar Funcionário </Link>
             <table className = "table table-bordered table-stripped">
                 <thead>
                      <th>Matrícula</th>
