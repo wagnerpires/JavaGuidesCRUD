@@ -74,7 +74,7 @@ const AddEmployeeComponent = () => {
                                 </div>
 
                                 <button className="btn btn-success" onClick = {(e) => saveEmployee(e)}> Salvar </button>
-                                <Link to="/employees" className="btn btn-danger">Voltarr</Link>
+                                <Link to="/employees" className="btn btn-danger">Voltar</Link>
 
                             </form>
                         </div>
