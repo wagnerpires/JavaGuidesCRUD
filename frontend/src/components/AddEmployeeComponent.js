@@ -10,20 +10,29 @@ const AddEmployeeComponent = () => {
     const history = useHistory();
     const { id } = useParams();
 
-    const saveEmployee = (e) => {
+    const saveOrUpdateEmployee = (e) => {
         e.preventDefault();
 
         const employee = { firstName, lastName, emailId };
 
-        EmployeeService.createEmployee(employee).then((response) => {
+        if(id) {
+            EmployeeService.updateEmployee(id, employee).then((response) => {
+                history.push('/employees')
+            }).catch(error => {
+                console.log(error);
+            })
 
-            console.log(response.data)
+        } else {
+            EmployeeService.createEmployee(employee).then((response) => {
 
-            history.push('/employees');
-
-        }).catch(error => {
-            console.log(error)
-        })
+                console.log(response.data)
+    
+                history.push('/employees');
+    
+            }).catch(error => {
+                console.log(error)
+            })
+        }
     }
 
     useEffect(() => {
@@ -34,10 +43,10 @@ const AddEmployeeComponent = () => {
         }).catch(error => {
             console.log(error)
         })
-    }, [])
+    }, [id])
 
     const title = () => {
-        if(id) {
+        if (id) {
             return <h2 className="text-center"> Alterar Funcionário</h2>
         } else {
             return <h2 className="text-center"> Incluir Funcionário</h2>
@@ -94,7 +103,7 @@ const AddEmployeeComponent = () => {
                                     </input>
                                 </div>
 
-                                <button className="btn btn-success" onClick={(e) => saveEmployee(e)}> Salvar </button>
+                                <button className="btn btn-success" onClick={(e) => saveOrUpdateEmployee(e)}> Salvar </button>
                                 <Link to="/employees" className="btn btn-danger">Voltar</Link>
 
                             </form>
